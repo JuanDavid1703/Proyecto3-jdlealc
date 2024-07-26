@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login de nuestro sistema</title>
+</head>
+<body>
+    <h1>Heladería el coma diabético</h1>
+    <h4>Por favor ingrese nombre de usuario y contraseña</h4>
+    <form action="/login" method="post">
+        <label for="nombre_usuario">Nombre de usuario:</label>
+        <input type="text" name="nombre_usuario" id="nombre_usuario" required>
+
+        <label for="contrasenia">Contraseña del usuario:</label>
+        <input type="password" name="contrasenia" id="contrasenia" required>
+
+        <button type="submit">Ingresar</button>
+    </form>
+</body>
+</html>

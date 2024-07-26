@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventas</title>
+</head>
+<body>
+    <h1>Tabla de ventas</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre del producto</th>
+                <th>Tipo</th>
+                <th>Venta</th>
+                <th>Ganancia</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for venta in ventas %}
+            <tr>
+                <td>{{venta.nombre_producto}}</td>
+                <td>{{venta.tipo_producto}}</td>
+                <td>{{venta.dinero_venta}}</td>
+                <td>{{venta.rentabilidad}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
